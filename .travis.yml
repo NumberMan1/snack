@@ -8,10 +8,10 @@ install:
     - go get -t -v ./...
 
 script:
-    - go vet -x github.com/funny/snet/go
-    - go install github.com/funny/snet/go
-    - go test -timeout 20m -race -v github.com/funny/snet/go
-    - go test -timeout 20m -coverprofile=coverage.txt -covermode=atomic -v github.com/funny/snet/go
+    - go vet -x github.com/NumberMan1/snack/go
+    - go install github.com/NumberMan1/snack/go
+    - go test -timeout 20m -race -v github.com/NumberMan1/snack/go
+    - go test -timeout 20m -coverprofile=coverage.txt -covermode=atomic -v github.com/NumberMan1/snack/go
 
 after_success:
     - bash <(curl -s https://codecov.io/bash)
